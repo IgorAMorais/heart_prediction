@@ -24,7 +24,8 @@ def main():
     exercise_angina = st.checkbox('Exercise Angina')
     st_slope_flat = st.checkbox('ST Slope: Flat')
     st_slope_up = st.checkbox('ST Slope: UP')
-    teste = st.checkbox('ST Slope?')
+
+    output=''
 
     input_dict = {
                 'Age': age,
@@ -40,14 +41,14 @@ def main():
     input_df = pd.DataFrame([input_dict])
 
     if st.button('Predict'):
-        output = model.predict(input_df)
+        output = model.predict(input_df)    
 
-""" if output == 1:
+    if output == 1:
         result = 'Yes'
     else:
         result = 'No'
-""" 
-st.success('Prediction: {output}')
+ 
+    st.success('Predict: {}'.format(result))
 
 if __name__ == "__main__":
     main()
