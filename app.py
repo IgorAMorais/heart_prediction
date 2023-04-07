@@ -47,7 +47,7 @@ def main():
         result = 'Yes'
     else:
         result = 'No'
- 
+
     st.success('Predict: {}'.format(result))
 
 if __name__ == "__main__":
