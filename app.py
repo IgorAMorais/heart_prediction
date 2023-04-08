@@ -1,8 +1,10 @@
 import pandas as pd
 import streamlit as st
 from joblib import dump, load
+from sklearn import preprocessing
 
 model = load("model.pkl")
+scaler = load("scaler.pkl")
 
 def main():
     #t.sidebar.image() #Colocar imagem relacionada ao projeto aqui
@@ -40,8 +42,14 @@ def main():
     
     input_df = pd.DataFrame([input_dict])
 
+    #input_df = scaler.fit(input_df)
+
+    #new_input_df = pd.DataFrame([input_df])
+
+    st.dataframe(scaler.feature_names_in_)
+
     if st.button('Predict'):
-        output = model.predict(input_df)    
+        output = model.predict(new_input_df)    
 
     if output == 1:
         result = 'Yes'
