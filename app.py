@@ -1,10 +1,10 @@
 import pandas as pd
 import streamlit as st
-from joblib import dump, load
+import pickle
 from sklearn import preprocessing
 
-model = load("model.pkl")
-scaler = load("scaler.pkl")
+model = pickle.load("model.pkl")
+scaler = pickle.load("scaler.pkl")
 
 def main():
     
@@ -14,7 +14,7 @@ def main():
 
     st.title('Heart Failure Prediction')
 
-    st.subheader('Model created to estimate the chance of some heart failure.')
+    st.subheader('Model created to estimate the chance of heart failure.')
 
     st.markdown('You will need the following data to estimate your chances:')
 
