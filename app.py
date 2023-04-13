@@ -3,8 +3,11 @@ import streamlit as st
 import pickle
 from sklearn import preprocessing
 
-model = pickle.load("model.pkl")
-scaler = pickle.load("scaler.pkl")
+with open('model.pkl', 'rb') as pickle_model:
+    model = pickle.load(pickle_model)
+
+with open('scaler.pkl', 'rb') as pickle_scaler:
+    scaler = pickle.load(pickle_scaler)
 
 def main():
     
