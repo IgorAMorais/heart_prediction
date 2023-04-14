@@ -32,7 +32,6 @@ pyparsing==3.0.9
 PyQt5==5.15.7
 python-json-logger==2.0.7
 pytz-deprecation-shim==0.1.0.post0
-pywin32==305.1
 PyYAML==6.0
 rich==13.3.3
 scikit-learn==1.2.2
