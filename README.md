@@ -1,4 +1,4 @@
-# heart_prediction
+# Heart Prediction
 
 Doenças cardiovasculáres são responsáveis por 17,9 milhões de mortes anualmente, algo próximo a 31% das mortes em todo o planeta. Um terço dessas MORTES ocorre de forma prematura, em pessoas com menos de 70 anos. Compreender os fatores que podem estar associados ao risco de doenças cardiovasculares é de extrema importância para um diagnóstico precoce, com mais chances de tratamento, garantindo uma maior expectativa de vida para o paciente.
 
